@@ -15,6 +15,14 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+  <plugin>
+       <groupId>org.apache.maven.plugins</groupId>
+       <artifactId>maven-war-plugin</artifactId>
+        <version>2.3</version>
+        <configuration>
+             <failOnMissingWebXml>false</failOnMissingWebXml>
+        </configuration>
+       </plugin>
   <build>
     <finalName>jenkins-git-integration</finalName>
   </build>
